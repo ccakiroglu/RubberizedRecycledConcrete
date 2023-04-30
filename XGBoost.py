@@ -21,7 +21,7 @@ colnamesC=[r'$Water$', r'$Cement$', r'$w/c$', r'$FM_{NCA}$', r'$NCA \text{ }[kg/
        r'Fiber\text{ }[kg/m^3]',r'$Fiber [\%]$', r'$No\text{ }Fiber$',r'$PP$', \
        r'$Steel$', r'$Steel\text{ }Tire\text{ }Wires$',r'$Age$', r'$f_c^{\prime}$']
 
-Cdir='G:\\My Drive\\Papers\\2023\\RubberizedConcrete\\EXCELCSV\\Compressive.csv'
+Cdir='https://raw.githubusercontent.com/ccakiroglu/RubberizedRecycledConcrete/main/Compressive.csv'
 df = read_csv(Cdir,header=0,names=colnamesC)
 data=df.values
 X, y = data[:, :-1], data[:, -1]
